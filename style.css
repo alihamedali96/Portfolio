@@ -19,6 +19,10 @@ margin:.5rem;
     color: bisque; /*text colour */
 }
 
+.navbar-links :hover{
+    color: white;
+}
+
 .navbar-links ul{
     margin:0;
     padding:0;
@@ -88,4 +92,41 @@ margin:.5rem;
      .navbar-links.active{
          display:flex;
      }
+}
+
+h1, h2{
+    text-align: center;
+}
+
+
+
+/* cards */
+
+.container{
+    /* position: relative; */
+    bottom: 150px;
+    right: 250px;
+    display:flex; /* makes the card in a flexbox going left to right */
+    /* justify-content: center; centers the cards into the middle pof the page */
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: darkolivegreen;
+    width: 220px;
+    height: 400px;
+    margin: 10px; /* The margin between each card (without this, they are touching) */
+    border-radius: 15px; /* makes the border rounded*/
+}
+
+.card-image{
+    height: 400px;
+    background-size: cover;
+    border-radius: 15px ; /* makes the border rounded*/
+}
+
+.card:hover{
+    cursor: pointer; /* changes cursor to pointer when hovering */
+    transform: scale(1.1); /* increases size of cards when hovering */
+
 }
