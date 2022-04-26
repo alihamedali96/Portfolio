@@ -2,6 +2,14 @@
     box-sizing:  border-box;
 }
 
+:root{ 
+    /* colours */
+    --theme1: rgb(35,111,140);
+    --theme2: rgb(45,137,160);
+    --theme3: rgb(54,172,181);
+    --theme4: rgb(84,210,211);
+   }
+
 body {
     margin : 0;
     padding: 0;
@@ -104,11 +112,14 @@ h1, h2{
 
 .container{
     /* position: relative; */
-    bottom: 150px;
-    right: 250px;
+    /* bottom: 150px;
+    right: 250px; */
     display:flex; /* makes the card in a flexbox going left to right */
     /* justify-content: center; centers the cards into the middle pof the page */
     flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+  
 }
 
 .card{
