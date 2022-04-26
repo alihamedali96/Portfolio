@@ -1,0 +1,91 @@
+*{
+    box-sizing:  border-box;
+}
+
+body {
+    margin : 0;
+    padding: 0;
+}
+
+.logo{
+margin:.5rem;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+    color: bisque; /*text colour */
+}
+
+.navbar-links ul{
+    margin:0;
+    padding:0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style:none; /* no dots on the lists*/
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: bisque;
+    padding :1rem;
+    display: block;
+
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none; /*so that it doesnt display by defualt */
+    flex-direction:column; 
+    justify-content: space-between;
+    width:30px;
+    height: 25px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px; /*make it rounded on the edges */
+}
+
+@media screen and  (max-width: 720px){ /* These styles only apply to screen with 720px or above */
+     .toggle-button{
+         display: flex;
+     }
+     .navbar-links{ 
+         display: none; /*hide the menu items  */
+         width: 100%;
+     }
+
+     .navbar{
+         flex-direction: column;
+         align-items: flex-start;
+
+     }
+
+     .navbar-links ul {
+         width: 100%;
+         flex-direction: column;
+
+     }
+
+     .navbar-links li {
+         text-align: center;
+     }
+
+     .navbar-links li a {
+         padding:.5rem 1rem;
+     }
+
+     .navbar-links.active{
+         display:flex;
+     }
+}
